@@ -1,4 +1,3 @@
-// import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
@@ -25,9 +24,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        {/** Vercel Analytics */}
-        {/* <Analytics /> */}
-        {/**Loading Bar */}
+        {/**Loading Indicator Between Page Transition */}
         <NextTopLoader />
       </body>
     </html>
